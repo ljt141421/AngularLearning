@@ -14,8 +14,14 @@
       share
     </button>
 
+    <!-- 
+      [product]向子组件（productAlertComponent）传递数据
+      (notify)为子组件中的该notify事件绑定一个事件，便于子组件向父组件通信
+    -->
     <app-product-alerts
-    [product]="product">
+    [product]="product"
+    (notify)="onNotify()"
+    >
     </app-product-alerts>
 
 </div>
