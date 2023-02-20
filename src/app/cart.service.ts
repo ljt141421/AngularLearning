@@ -26,6 +26,7 @@ export class CartService {
     return this.items;
   }
 
+  //使用httpClient获取运费
   getShippingPrices(){
     return this.httpClient.get<{type: string, price: number}[]>('../assets/shipping.json');
   }

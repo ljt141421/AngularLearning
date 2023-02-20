@@ -12,12 +12,13 @@ import { CartService } from '../cart.service';
 })
 export class ProductDetailsComponent implements OnInit{
 
-  product: Product | undefined;
-
   constructor(
     private route: ActivatedRoute,
     private cartService: CartService
   ){}
+
+  product: Product | undefined;
+
 
   //获取路由上面传递的productId并拿到具体product数据
   ngOnInit() :void{
