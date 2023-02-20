@@ -20,7 +20,7 @@ export class ProductDetailsComponent implements OnInit{
   ){}
 
   //获取路由上面传递的productId并拿到具体product数据
-  ngOnInit() {
+  ngOnInit() :void{
     //first get the productId from the current route
     const routeParams = this.route.snapshot.paramMap;
     const productIdFromRoute = Number(routeParams.get('productId'));
